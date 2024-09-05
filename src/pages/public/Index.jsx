@@ -268,7 +268,7 @@ const Index = () => {
               </div>
 
               <div
-                className="rounded-full w-[300px] h-[300px] bg-cover bg-center relative md:flex-none hidden md:block"
+                className="rounded-full w-[300px] h-[300px] bg-cover bg-center md:flex-none hidden md:block"
                 style={{
                   backgroundImage: `url(${url}/media/${personal_info[0].hero_image})`,
                 }}
