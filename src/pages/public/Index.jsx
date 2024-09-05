@@ -122,18 +122,18 @@ const Index = () => {
       >
         <section id="hero">
           {/* Nav bar container */}
-          <div className="bg-white mx-auto py-4 shadow-sm navbar md:fixed md:top-0 md:left-0 md:right-0">
+          <div className="bg-white mx-auto py-5 shadow-sm navbar md:fixed md:top-0 md:left-0 md:right-0">
             {/* Nav bar */}
             <nav className="container flex md:px-0 px-14 max-w-screen-xl mx-auto items-center justify-between font-bold bg-white">
               <div className="logo text-3xl text-[var(--primary-color)]">
-                <a href="http://localhost:5173/">Pathum Don</a>
+                <a href="/">Pathum Don</a>
               </div>
 
               <div className="md:flex text-[var(--secondary-color)] text-md space-x-6 hidden">
                 <div className="group">
                   <a
                     className="hover:text-[var(--primary-color)] px-3"
-                    href="http://localhost:5173/"
+                    href="/"
                   >
                     Home
                   </a>
@@ -196,7 +196,7 @@ const Index = () => {
                 }`}
               >
                 <a
-                  href="http://localhost:5173/index"
+                  href="/index"
                   className="hover:text-[var(--primary-color)]"
                   onClick={toggle}
                 >
@@ -253,12 +253,13 @@ const Index = () => {
 
                 <div className="flex md:flex-row flex-col md:space-x-11 space-x-0 md:space-y-0 space-y-10">
                   <a
-                    href={personal_info[0].file}
+                    href={`${url}/media/${personal_info[0].file}`}
                     className="text-white text-lg font-bold bg-[var(--primary-color)] rounded-full px-8 py-4 hover:scale-110 duration-200 text-center"
                   >
                     Download CV
                   </a>
                   <a
+                    target="_blank"
                     className="text-[var(--primary-color)] text-lg font-bold border border-[var(--primary-color)] rounded-full px-8 py-4 hover:scale-110 duration-200 text-center"
                     href="#contact"
                   >
