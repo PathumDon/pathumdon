@@ -91,10 +91,11 @@ const Index = () => {
   const getInfo = async () => {
     try {
       const data = await fetchData();
+      console.log(data);
       setPersonalInfo(data.personal);
       setSkills(data.skills);
       setEducation(data.education);
-      setAchivements(data.achievements);
+      setAchivements(data.achivements);
       setExperiences(data.experience);
       setSocials(data.socials);
       setTheme(data.colors);
