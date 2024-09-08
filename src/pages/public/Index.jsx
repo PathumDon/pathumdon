@@ -95,7 +95,7 @@ const Index = () => {
       setPersonalInfo(data.personal);
       setSkills(data.skills);
       setEducation(data.education);
-      setAchivements(data.achivements);
+      setAchivements(data.achievements);
       setExperiences(data.experience);
       setSocials(data.socials);
       setTheme(data.colors);
